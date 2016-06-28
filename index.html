@@ -13,7 +13,7 @@
 		<p>DJ / Namurlug 28/06/2016</p>
 	</header>
 	<section class="slide" id="cover">
-		<h2>Contribuer aux logiciels libres</h2>
+		<h2  class="shout grow">Contribuer aux logiciels libres</h2>
 		<p></p>
 		<p></p>
 		<p>DJ / Namurlug 2016</p>
@@ -46,21 +46,22 @@
 		<h2>Utiliser</h2>
 		<p>C'est le niveau 0, sans utilisateur un programme ne sert a rien</p>
 		<h2>Evangéliser</h2>
-		<p>Faire la promotion des logiciels libres, non pas a marche forcé ou en brusquant les autres ("windows c'est de la merde") mais par petit pas.</p>
+		<p>Faire la promotion des logiciels libres, non pas a marche forcée ou en brusquant les autres ("windows c'est de la merde") mais par petit pas.</p>
 		<p>Un developpeur de programme proprio qui utilise Firefox/VLC, c'est déjà bien</p>
 	</section>
 	<section class="slide">
 		<h2>Transmettre</h2>
 		<p> Créer du contenu, expliquer</p>
-		<p>En postant des infos sur un blog, un planet, un forum</p>
+		<p>En postant des infos sur un blog, un planet <sup><a href="http://planet-libre.org/">[1]</a></sup>, un forum</p>
 		<p>Des descriptions de logiciel sur framasoft <a href="https://framasoft.org/rubrique2.html">framalibre</a>. <a href="https://participer.framasoft.org/">Frama colibri</a>. Exemple le <a href="http://beta.framasoft.org/">framalibre nouvelle version</a> </p>
+
 	</section>
 		<!-- Traduction -->
 	<section class="slide">
 		<h2>Traduire</h2>
 		<h2>- Des programmes</h2>
-		<p>Plus un programme a de langue disponible, plus il y a d'utilisateur possible</p>
-		<p>le standard le plus répendu dans les programmes c'est les fichiers .po (.mo après compilation) <a href="https://en.wikipedia.org/wiki/Gettext">wikipédia</a>. Exemple : Playonlinux
+		<p>Plus un programme a de langue disponible, plus il y a d'utilisateurs possible</p>
+		<p>le standard le plus répandu dans les programmes c'est les fichiers .po (.mo après compilation) <a href="https://en.wikipedia.org/wiki/Gettext">wikipédia</a>. Exemple : Playonlinux
 		<ul>
 			<li><a href="exemples/trad/default.po">default.po</a> </li>
 			<li><a href="exemples/trad/fr/LC_MESSAGES/polVault.po">fr/LC_MESSAGES/polVault.po</a> </li>
@@ -89,25 +90,25 @@
 	<section class="slide">
 		<h2>Une autre manière de contribuer c'est de tester une nouvelle version</h2>
 		<p>Pour ça il faut aller voir sur le site web du programme pour voir où il enregistre ses versions en developpement.</p>
-		<p>Pour l'instant c'est souvent sur des forges logicielles comme ça</p>
+		<p>Pour l'instant c'est souvent sur des forges logicielles</p>
 	</section>
 	<section class="slide">
 		<h2>Gestionnaires de versions</h2>
 		<ul>
-			<li>Git</li>
+			<li>Git : développé par Linus Torvald</li>
 				<ul>
 					<li>Gitlab</li>
-					<li>Github</li>
+					<li>Github : bugs, site web, coté "social"</li>
 					<li><a href="https://framagit.org/">Framagit (Gitlab aussi)</a></li>
 					<a href="http://rogerdudler.github.io/git-guide/index.fr.html">guide fr</a> <a href="http://christopheducamp.com/2013/12/15/github-pour-nuls-partie-1/">autre tuto</a>
 				</ul>
-			<li>Sourceforge</li>
-			<li><a href="http://launchpad.net/">Launchpad</a></li>
+			<li><a href="http://sourceforge.net/">Sourceforge</a> en très grosse perte de vitesse</li>
+			<li><a href="http://launchpad.net/">Launchpad</a> (Ubuntu)</li>
 		</ul>
 	</section>	
 	<section class="slide">
 		<p>Quand on a téléchargé la dernière version, ça demande souvent des dépendances qui ne sont installé d'origine et des bricolages.</p>
-		<p>La meilleur des solutions c'est d'isoler sa version de test</p>
+		<p>La meilleur des solutions c'est d'isoler sa version de test pour éviter les effets de bords</p>
 		<ul>
 			<li>Virtualisation (virtualbox, docker)</li>
 			<li>chroot et schroot : <a href="https://doc.ubuntu-fr.org/schroot">sur ubuntu-fr</a>, <a href="https://wiki.debian.org/fr/Chroot">debian.org/fr</a></li>
@@ -116,16 +117,50 @@
 		</ul>
 	</section>	
 	<section class="slide">
+		<h2>Lancer le programme</h2>
+		<a href="https://doc.ubuntu-fr.org/tutoriel/compilation">compilation sous ubuntu</a>
+		<p></p>
+	</section>
+	<section class="slide">
 		<h2>On peut aussi contribuer a trier les bugs</h2>
-		<a href="https://bugs.launchpad.net/bugs/+bugs?field.searchtext=thunar&search=Search+Bug+Reports&field.scope=all&field.scope.target=">ici pour thunar sous ubuntu</a></a>
+		<a href="https://bugs.launchpad.net/bugs/+bugs?field.searchtext=thunar&search=Search+Bug+Reports&field.scope=all&field.scope.target=">exemple pour thunar sous ubuntu</a></a>
+		<p>Pour éviter d'avoir des bugs en double, et donc limiter la charge de travail des développeurs (si 2 personnes travaillent sur le même problème signalé a deux endroits différents par 2 personnes diffèrentes c'est une perte de temps)</p>
+		<p>ça permet aussi de confirmer ou pas un bug en essayant de le reproduire</p>
+	</section>	
+	<section class="slide">
+		<h2>Rapporter un bug</h2>
+		<p>Apport, une programme qui se lance quand un programma a planté et qui permet d'envoyer automatiquement des infos</p>
+		<p><a href="https://doc.ubuntu-fr.org/rapporter_un_bug">doc ubuntu</a></p>
+		<p>lancer un programme dans un terminal permet aussi d'avoir des infos complèmentaires</p>
+	</section>	
+	<section class="slide">
+				<pre>
+<code>	vlc exemple.m4v	</code>
+<code>	VLC media player 2.2.2 Weatherwax (revision 2.2.2-0-g6259d80)	</code>
+<code>	[0908e930] core libvlc: Lancement de vlc avec l'interface par défaut. Utilisez « cvlc » pour démarrer VLC sans interface.	</code>
+<code>	Failed to open VDPAU backend libvdpau_va_gl.so: Ne peut ouvrir le fichier d'objet partagé: Aucun fichier ou dossier de ce type	</code>
+<code>	Failed to open VDPAU backend libvdpau_va_gl.so: Ne peut ouvrir le fichier d'objet partagé: Aucun fichier ou dossier de ce type	</code>
+<code>	[09155c80] core input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 300 ms)	</code>
+<code>	[09155c80] core input error: ES_OUT_RESET_PCR called	</code>
+<code>	Failed to open VDPAU backend libvdpau_va_gl.so: Ne peut ouvrir le fichier d'objet partagé: Aucun fichier ou dossier de ce type	</code>
+<code>	QObject::~QObject: Timers cannot be stopped from another thread	</code>
+		</pre>
 	</section>	
 	<section class="slide">
 		<h2>ou créer des paquets</h2>
+		<p>Plus un programme est facilement installable, plus il y a d'utilisateur potentiel</p>
+		<ul>
+			<li>Les packets .deb (debian, ubuntu et dérivé)</li>
+			<p><a href="https://www.debian.org/doc/manuals/packaging-tutorial/packaging-tutorial.fr.pdf">Tutoriel pour debian en français</a>, pour <a href="http://packaging.ubuntu.com/fr/html/">ubuntu</a> <a href="http://packaging.ubuntu.com/fr/ubuntu-packaging-guide.pdf">(en pdf)</a></p>
+			<li>Ubuntu a lancé les paquets Snap qui embarquent les dépendances</li>
+		</ul>
+		
 	</section>
 	<section class="slide">
 		<h2>Exemples de contributeur</h2>
 		<p><a href="https://raphaelhertzog.fr">Raphael Hertzog</a> Contributeur Debian : création de paquet .deb, traduction de livre debian, recruttement, maintenance etc. Exemples de ses contributions<a href="https://raphaelhertzog.fr/2016/06/16/mes-activites-libres-en-mai-2016/">contribution de mai 2016</a></p>
 		<p><a href="https://philippe.scoffoni.net">Philippe Scoffoni</a> : il a une entreprise en logiciel libre. Il fait des articles, des <a href="https://philippe.scoffoni.net/installation-mypads-debian-8/">tutos</a>, et fait des dons quand il gagne de l'argent avec un logiciel libre</p>
+		<p><a href="http://blog.sciunto.org//posts/contributions_2/">François Boulogne</a></p>
 	</section>		
 	<div class="progress"></div>
 	<script src="shower/shower.min.js"></script>
