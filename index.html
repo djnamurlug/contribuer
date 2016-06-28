@@ -10,12 +10,14 @@
 <body class="shower list">
 	<header class="caption">
 		<h1>Contribuer aux logiciels libres</h1>
-		<p>DJ / Namurlug 25/06/2016</p>
+		<p>DJ / Namurlug 28/06/2016</p>
 	</header>
 	<section class="slide" id="cover">
 		<h2>Contribuer aux logiciels libres</h2>
+		<p></p>
+		<p></p>
 		<p>DJ / Namurlug 2016</p>
-		<img src="pictures/namurlug.png" alt="" class="cover">
+		<img src="pictures/path4167_b.png" alt="" class="cover">
 		<!--
 			To apply styles to the certain slides
 			set slide ID to get needed elements
@@ -23,20 +25,20 @@
 		<style>
 			#cover h2 {
 				margin:30px 0 0;
-				color:#FFF;
+				
 				text-align:center;
 				font-size:70px;
 				}
 			#cover p {
-				margin:10px 0 0;
+				margin:100px 0 0;
 				text-align:center;
-				color:#FFF;
 				font-style:italic;
 				font-size:20px;
 				}
 				#cover p a {
 					color:#FFF;
 					}
+				margin :
 		</style>
 	</section>
 		<!-- evangelisme -->
@@ -85,20 +87,41 @@
 
 			<!-- dev -->
 	<section class="slide">
+		<h2>Une autre manière de contribuer c'est de tester une nouvelle version</h2>
+		<p>Pour ça il faut aller voir sur le site web du programme pour voir où il enregistre ses versions en developpement.</p>
+		<p>Pour l'instant c'est souvent sur des forges logicielles comme ça</p>
 	</section>
 	<section class="slide">
-	</section>	
-	<section class="slide">
-		<h2>GEstionnaires de versions</h2>
+		<h2>Gestionnaires de versions</h2>
 		<ul>
 			<li>Git</li>
 				<ul>
-					<li>Gitorius</li>
+					<li>Gitlab</li>
 					<li>Github</li>
+					<li><a href="https://framagit.org/">Framagit (Gitlab aussi)</a></li>
 					<a href="http://rogerdudler.github.io/git-guide/index.fr.html">guide fr</a> <a href="http://christopheducamp.com/2013/12/15/github-pour-nuls-partie-1/">autre tuto</a>
 				</ul>
+			<li>Sourceforge</li>
+			<li><a href="http://launchpad.net/">Launchpad</a></li>
 		</ul>
 	</section>	
+	<section class="slide">
+		<p>Quand on a téléchargé la dernière version, ça demande souvent des dépendances qui ne sont installé d'origine et des bricolages.</p>
+		<p>La meilleur des solutions c'est d'isoler sa version de test</p>
+		<ul>
+			<li>Virtualisation (virtualbox, docker)</li>
+			<li>chroot et schroot : <a href="https://doc.ubuntu-fr.org/schroot">sur ubuntu-fr</a>, <a href="https://wiki.debian.org/fr/Chroot">debian.org/fr</a></li>
+			<p>normalement il y avait une demo mais pas eut le temps</p>
+			<li>pour des programmes en python : <a href="http://sametmax.com/les-environnement-virtuels-python-virtualenv-et-virtualenvwrapper/">virtualenv</a> et <a href="http://sametmax.com/mieux-que-python-virtualenvwrapper-pew/">Pew</a></li>
+		</ul>
+	</section>	
+	<section class="slide">
+		<h2>On peut aussi contribuer a trier les bugs</h2>
+		<a href="https://bugs.launchpad.net/bugs/+bugs?field.searchtext=thunar&search=Search+Bug+Reports&field.scope=all&field.scope.target=">ici pour thunar sous ubuntu</a></a>
+	</section>	
+	<section class="slide">
+		<h2>ou créer des paquets</h2>
+	</section>
 	<section class="slide">
 		<h2>Exemples de contributeur</h2>
 		<p><a href="https://raphaelhertzog.fr">Raphael Hertzog</a> Contributeur Debian : création de paquet .deb, traduction de livre debian, recruttement, maintenance etc. Exemples de ses contributions<a href="https://raphaelhertzog.fr/2016/06/16/mes-activites-libres-en-mai-2016/">contribution de mai 2016</a></p>
